@@ -12,6 +12,9 @@
 		18160DA02CD955CC004E4BB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18160D9F2CD955CC004E4BB3 /* ViewController.swift */; };
 		18160DA52CD955CD004E4BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18160DA42CD955CD004E4BB3 /* Assets.xcassets */; };
 		18160DA82CD955CD004E4BB3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 18160DA72CD955CD004E4BB3 /* Base */; };
+		18160DB62CD969A5004E4BB3 /* Components in Frameworks */ = {isa = PBXBuildFile; productRef = 18160DB52CD969A5004E4BB3 /* Components */; };
+		18160DB92CD96B5F004E4BB3 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 18160DB82CD96B5F004E4BB3 /* Networking */; };
+		18160DBC2CD96BDB004E4BB3 /* ProductCatalog in Frameworks */ = {isa = PBXBuildFile; productRef = 18160DBB2CD96BDB004E4BB3 /* ProductCatalog */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		18160DA42CD955CD004E4BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18160DA72CD955CD004E4BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18160DA92CD955CD004E4BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18160DB32CD96986004E4BB3 /* Components */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Components; sourceTree = "<group>"; };
+		18160DB72CD96B3D004E4BB3 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
+		18160DBA2CD96BD1004E4BB3 /* ProductCatalog */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ProductCatalog; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18160DB92CD96B5F004E4BB3 /* Networking in Frameworks */,
+				18160DB62CD969A5004E4BB3 /* Components in Frameworks */,
+				18160DBC2CD96BDB004E4BB3 /* ProductCatalog in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 				18160DB02CD956B8004E4BB3 /* FeatureModules */,
 				18160D9A2CD955CC004E4BB3 /* Lightspeed */,
 				18160D992CD955CC004E4BB3 /* Products */,
+				18160DB42CD969A5004E4BB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +76,8 @@
 		18160DAF2CD956AD004E4BB3 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				18160DB72CD96B3D004E4BB3 /* Networking */,
+				18160DB32CD96986004E4BB3 /* Components */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -73,6 +85,7 @@
 		18160DB02CD956B8004E4BB3 /* FeatureModules */ = {
 			isa = PBXGroup;
 			children = (
+				18160DBA2CD96BD1004E4BB3 /* ProductCatalog */,
 			);
 			path = FeatureModules;
 			sourceTree = "<group>";
@@ -96,6 +109,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		18160DB42CD969A5004E4BB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +132,11 @@
 			dependencies = (
 			);
 			name = Lightspeed;
+			packageProductDependencies = (
+				18160DB52CD969A5004E4BB3 /* Components */,
+				18160DB82CD96B5F004E4BB3 /* Networking */,
+				18160DBB2CD96BDB004E4BB3 /* ProductCatalog */,
+			);
 			productName = Lightspeed;
 			productReference = 18160D982CD955CC004E4BB3 /* Lightspeed.app */;
 			productType = "com.apple.product-type.application";
@@ -387,6 +412,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18160DB52CD969A5004E4BB3 /* Components */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Components;
+		};
+		18160DB82CD96B5F004E4BB3 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		18160DBB2CD96BDB004E4BB3 /* ProductCatalog */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProductCatalog;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18160D902CD955CC004E4BB3 /* Project object */;
 }
