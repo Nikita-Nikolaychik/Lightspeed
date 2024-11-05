@@ -2,7 +2,7 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
-    var window: UIWindow?
+    var appCoordinator = AppCoordinator()
     
     // MARK: - Scene life cycle
     
@@ -12,12 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         options connectionOptions: UIScene.ConnectionOptions
     ) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: windowScene)
-        window?.makeKeyAndVisible()
-        
-        let viewController = ViewController()
-        let navController = UINavigationController(rootViewController: viewController)
-        window?.rootViewController = navController
+        appCoordinator.start(with: windowScene)
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {}
