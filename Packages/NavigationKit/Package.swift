@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "Components",
+    name: "NavigationKit",
     platforms: [
         .iOS(.v17)
     ],
     products: [
         .library(
-            name: "Components",
-            targets: ["Components"]),
+            name: "NavigationKit",
+            targets: ["NavigationKit"]),
     ],
     targets: [
         .target(
-            name: "Components"),
+            name: "NavigationKit"),
     ]
 )
